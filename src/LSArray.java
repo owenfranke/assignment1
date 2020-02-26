@@ -5,24 +5,12 @@ import java.util.stream.Collectors;
 
 public class LSArray {
 	public void printAllAreas() throws FileNotFoundException {
-		LSData obj = new LSData(null, null, null, null);
-		LSData[] data = obj.getData();
-		String line = "";
-		for (int i = 0; i < 2976; i++) {
-			line += data[i].getArea();
-		}
-
-		Scanner l = new Scanner(line).useDelimiter(",");
-
-		ArrayList<String> a = new ArrayList<String>();
-		while (l.hasNext()) {
-			a.add(l.next());
-		}
-
-		ArrayList<String> afin = (ArrayList<String>) a.stream().distinct().collect(Collectors.toList());
-		for (int i = 0; i < afin.size(); i++) {
-			System.out.println(afin.get(i));
-		}
+		LSData[] data = (new LSData(null,null,null,null)).getData();
+		String[] areas = new String[2976];
+		
+		for (int i =0; i<2976;i++) {
+			 System.out.println("Stage "+data[i].getStage()+", "+data[i].getDay()+", "+data[i].getTime()+"h00 start... has areas "+data[i].getArea());
+			}
 
 	}
 
