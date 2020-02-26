@@ -9,7 +9,7 @@ public class LSArray {
 		String[] areas = new String[2976];
 		
 		for (int i =0; i<2976;i++) {
-			 System.out.println("Stage "+data[i].getStage()+", "+data[i].getDay()+", "+data[i].getTime()+"h00 start... has areas "+data[i].getArea());
+			 System.out.println("Stage "+data[i].getStage()+", ont the "+data[i].getDay()+"th day,"+data[i].getTime()+"h00 start time... has areas "+data[i].getArea());
 			}
 
 	}
