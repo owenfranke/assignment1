@@ -4,7 +4,7 @@ import java.io.PrintWriter;
 import java.util.Scanner;
 
 public class LSData {
-	public static LSData[] data = new LSData[2976];
+	
 
 	private Integer opCount = 0;
 	private String key;
@@ -16,6 +16,21 @@ public class LSData {
 	}
 
 	public LSData[] getData() throws FileNotFoundException {
+		
+		File check = new File(
+				"/home/owen/eclipse-workspace/Assignment1/src/Load_Shedding_All_Areas_Schedule_and_Map.clean.final.txt");
+		Scanner checker = new Scanner(check);
+
+		int j = 0;
+
+		while (checker.hasNextLine()) {
+			checker.nextLine();
+			j++;
+
+		}
+		checker.close();
+		LSData[] data = new LSData[j];
+		
 		File f = new File(
 				"/home/owen/eclipse-workspace/Assignment1/src/Load_Shedding_All_Areas_Schedule_and_Map.clean.final.txt");
 		Scanner file = new Scanner(f);

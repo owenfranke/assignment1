@@ -1,0 +1,3 @@
+Find Operations: 1
+Insert Operations: 2976
+Total Operation Count: 2977

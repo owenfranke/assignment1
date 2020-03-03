@@ -1,7 +1,9 @@
-package test;
+
 import java.io.FileNotFoundException;
 
 public class LSBSTTree {
+	
+	
 	public void printAllAreas() throws FileNotFoundException {
 		BinarySearchTree<LSBSTData> data = new LSBSTData(null,null).getData();
 		
@@ -14,6 +16,7 @@ public class LSBSTTree {
 		BinarySearchTree<LSBSTData> d = new LSBSTData(null,null).getData();
 		
 		BinaryTreeNode<LSBSTData> fin = d.find(target);
+		target.getData();
 		target.IncreaseCount();
 		try {
 			System.out.println(fin.data.toString());

@@ -11,7 +11,7 @@ public class LSArray {
 		
 		
 
-		for (int i = 0; i < 2976; i++) {
+		for (int i = 0; i < data.length; i++) {
 			Scanner l = new Scanner(data[i].getKey()).useDelimiter("_");
 
 			String stage = l.next();
@@ -31,7 +31,7 @@ public class LSArray {
 		LSData obj = new LSData(null, null);
 		LSData[] data = obj.getData();
 		String target = stage+"_"+day+"_"+startTime;
-		for (int i = 0; i < 2976; i++) {
+		for (int i = 0; i < data.length; i++) {
 			obj.incOp(); // Increase Operation Count
 			if (target.equals(data[i].getKey())) { 
 																								

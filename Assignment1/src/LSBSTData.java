@@ -3,7 +3,6 @@ import java.io.FileNotFoundException;
 import java.io.PrintWriter;
 import java.util.Scanner;
 
-import BinarySearchTree;
 
 public class LSBSTData implements Comparable<LSBSTData>{
 	private Integer opCount = 0;
@@ -36,6 +35,7 @@ public class LSBSTData implements Comparable<LSBSTData>{
 			IncreaseCountInsert();
 			i++;
 		}
+	
 		file.close();
 
 		return data;

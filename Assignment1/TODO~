@@ -1,0 +1,10 @@
+python program will:
+
+- Create backup of original file
+- Replace original file with test files
+- store keys of file into array
+- run LSArrayApp "" "" "" and run LSBSTApp "" "" ""
+- take values from operation count and binary operation count
+- append to seperate textfiles
+
+- Restore original file with backup
