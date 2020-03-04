@@ -70,9 +70,10 @@ public class LSBSTData implements Comparable<LSBSTData>{
 	public void writeOperations() throws FileNotFoundException{
 		PrintWriter write = new PrintWriter("Binary Operation Count.txt");
 		Integer total = opCount+opCountInsert;
-				write.println("Find Operations: "+opCount);
+				write.println("Find Operations: "+opCount);			//Uncomment
 				write.println("Insert Operations: "+opCountInsert);
 				write.println("Total Operation Count: "+total);
+				//write.println(total);
 				write.close();
 	}
 	

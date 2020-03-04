@@ -1,0 +1,45 @@
+
+from shutil import copy2
+import os
+def main():
+        
+        file = open("Load_Shedding_All_Areas_Schedule_and_Map.clean.final.txt", "r") 
+        backup = open("backup.txt","w+")
+        copy2("Load_Shedding_All_Areas_Schedule_and_Map.clean.final.txt","backup.txt")
+        operations = open("LSBSTTree - Operations Using Tests","a");
+        
+        for i in range(1,11): 
+               # operations.write("TEST"+str(i))
+               #operations.write("////////////////////////////")
+                file = open("Load_Shedding_All_Areas_Schedule_and_Map.clean.final.txt", "w")
+                copy2("Test"+str(i)+".txt", "Load_Shedding_All_Areas_Schedule_and_Map.clean.final.txt")
+                file = open("Load_Shedding_All_Areas_Schedule_and_Map.clean.final.txt", "r")
+                
+                lines = file.readlines()
+                
+                for i in range(len(lines)):
+                        key = (lines[i].split(' ', 1)[0]).replace("_"," ")
+                        
+                       
+                        #os.system("javac LSBSTApp.java")
+                        (os.system ("java LSBSTApp "+key))
+                        temp = open("Binary Operation Count.txt","r")
+                        
+                        l = temp.readlines()
+                        operations.write(l[0])
+                        
+                        
+                
+        
+                
+        
+        copy2("backup.txt", "Load_Shedding_All_Areas_Schedule_and_Map.clean.final.txt")
+        file.close() 
+        backup.close()
+        operations.close()
+        temp.close()
+        
+        
+
+if __name__== "__main__":
+        main()

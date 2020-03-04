@@ -1,3 +1,8 @@
+
+*** These modified files were found in JOE when it aborted on Wed Mar  4 20:06:23 2020
+*** JOE was aborted because the terminal closed
+
+*** File 'Makefile'
 # binary search program makefile
 # Hussein Suleman
 # 22 March 2017
@@ -15,7 +20,7 @@ CLASSES=BTQueueNode.class BTQueue.class \
 	 BinaryTreeNode.class BinaryTree.class \
  	 BinarySearchTree.class BinarySearchTreeTest.class\
 	 LSData.class LSArray.class LSArrayApp.class\
-	 LSBSTData.class LSBSTTree.class LSBSTApp.class
+	 LSBSTData.class LSBSTTree.class LSBSTData.class
 CLASS_FILES=$(CLASSES:%.class=$(BINDIR)/%.class)
 
 default: $(CLASS_FILES)
@@ -24,4 +29,15 @@ clean:
 	rm $(BINDIR)/*.class
 run:
 	@java -cp bin LSArrayApp > bin/Output/outputArray.txt
-	@java -cp bin LSBSTApp > bin/Output/outputBST.txt
+*** File '(Unnamed)'
+MakeFile
+Makefile
+TODO
+TODO
+Makefile
+Makefile
+Makefile
+Makefile
+Makefile
+Makefile
+Makefile

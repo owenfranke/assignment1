@@ -15,7 +15,7 @@ CLASSES=BTQueueNode.class BTQueue.class \
 	 BinaryTreeNode.class BinaryTree.class \
  	 BinarySearchTree.class BinarySearchTreeTest.class\
 	 LSData.class LSArray.class LSArrayApp.class\
-	 LSBSTData.class LSBSTTree.class LSBSTApp.class
+	 LSBSTData.class LSBSTTree.class LSBSTData.class
 CLASS_FILES=$(CLASSES:%.class=$(BINDIR)/%.class)
 
 default: $(CLASS_FILES)
